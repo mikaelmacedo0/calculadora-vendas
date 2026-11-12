@@ -1,0 +1,30 @@
+<!DOCTYPE html> <!-- Informa ao navegador que este arquivo é HTML. -->
+<html lang="pt-BR"> <!-- Define o idioma da página. -->
+  <head> <!-- Inicia as configurações da página. -->
+    <meta charset="UTF-8"> <!-- Permite mostrar corretamente os acentos. -->
+    <title>Calculadora de vendas</title> <!-- Define o título da aba. -->
+  </head> <!-- Finaliza as configurações. -->
+  <body> <!-- Inicia o conteúdo visível. -->
+    <h1>Calculadora de vendas</h1> <!-- Mostra o título. -->
+    <label for="preco">Preço (R$):</label> <!-- Identifica o primeiro campo. -->
+    <input id="preco" type="number" min="0" step="0.01"> <!-- Recebe o preço. -->
+    <label for="quantidade">Quantidade:</label> <!-- Identifica o segundo campo. -->
+    <input id="quantidade" type="number" min="1" step="1"> <!-- Recebe as unidades. -->
+    <button onclick="calcular()">Calcular</button> <!-- Inicia o cálculo ao clicar. -->
+    <p id="resultado"></p> <!-- Reserva espaço para mostrar o total. -->
+    <script> // Inicia as instruções em JavaScript.
+      function calcular() { // Cria a função chamada pelo botão.
+      const preco = Number(document.getElementById("preco").value); // Lê o preço.
+      const quantidade = Number(document.getElementById("quantidade").value); // Lê a quantidade.
+      const resultado = document.getElementById("resultado"); // Localiza a área do resultado.
+      if (preco <= 0 || !Number.isInteger(quantidade) || quantidade <= 0) { // Confere os valores.
+      resultado.textContent = "Informe um preço e uma quantidade válidos."; // Mostra o aviso.
+      return; // Interrompe o cálculo se os valores forem inválidos.
+      } // Encerra a verificação.
+      const total = preco * quantidade; // Multiplica preço por quantidade.
+      resultado.textContent = "Total da venda: " + total.toLocaleString("pt-BR", {style: "currency", currency: "BRL"}); // Exibe
+      em reais.
+      } // Finaliza a função calcular.
+    </script> <!-- Finaliza o JavaScript. -->
+  </body> <!-- Finaliza o conteúdo visível. -->
+</html> <!-- Finaliza a página HTML. -->
