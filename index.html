@@ -14,17 +14,17 @@
     <p id="resultado"></p> <!-- Reserva espaço para mostrar o total. -->
     <script> // Inicia as instruções em JavaScript.
       function calcular() { // Cria a função chamada pelo botão.
-      const preco = Number(document.getElementById("preco").value); // Lê o preço.
-      const quantidade = Number(document.getElementById("quantidade").value); // Lê a quantidade.
-      const resultado = document.getElementById("resultado"); // Localiza a área do resultado.
-      if (preco <= 0 || !Number.isInteger(quantidade) || quantidade <= 0) { // Confere os valores.
-      resultado.textContent = "Informe um preço e uma quantidade válidos."; // Mostra o aviso.
-      return; // Interrompe o cálculo se os valores forem inválidos.
-      } // Encerra a verificação.
-      const total = preco * quantidade; // Multiplica preço por quantidade.
-      resultado.textContent = "Total da venda: " + total.toLocaleString("pt-BR", {style: "currency", currency: "BRL"}); // Exibe
+        const preco = Number(document.getElementById("preco").value); // Lê o preço.
+        const quantidade = Number(document.getElementById("quantidade").value); // Lê a quantidade.
+        const resultado = document.getElementById("resultado"); // Localiza a área do resultado.
+        if (preco <= 0 || !Number.isInteger(quantidade) || quantidade <= 0) { // Confere os valores.
+          resultado.textContent = "Informe um preço e uma quantidade válidos."; // Mostra o aviso.
+          return; // Interrompe o cálculo se os valores forem inválidos.
+        } // Encerra a verificação.
+        const total = preco * quantidade; // Multiplica preço por quantidade.
+        resultado.textContent = "Total da venda: " + total.toLocaleString("pt-BR", {style: "currency", currency: "BRL"}); // Exibe
       em reais.
-      } // Finaliza a função calcular.
+        } // Finaliza a função calcular.
     </script> <!-- Finaliza o JavaScript. -->
-  </body> <!-- Finaliza o conteúdo visível. -->
+</body> <!-- Finaliza o conteúdo visível. -->
 </html> <!-- Finaliza a página HTML. -->
