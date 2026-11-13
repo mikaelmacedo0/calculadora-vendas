@@ -15,4 +15,4 @@
       -Operadores aritméticos: "+, -, /, *, %"
       -Precedências de operadores: "(), **, +, /, %, +, -"
       -Operadores de atribuição: "=, +=, -+, *=, /=, %="
-      
+      -Atividade Prática 01 - Calculadora de compra
