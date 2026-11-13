@@ -1,0 +1,19 @@
+{
+  "dependencies": {
+    "@inquirer/prompts": "^8.8.0",
+    "inquire": "^0.4.8",
+    "inquirer": "^14.3.0",
+    "require": "^0.4.4"
+  },
+  "name": "aula-03",
+  "version": "1.0.0",
+  "description": "",
+  "main": "avaliacaoDeDesempenho.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs"
+}
