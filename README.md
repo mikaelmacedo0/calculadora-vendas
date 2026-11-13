@@ -16,3 +16,6 @@
       -Precedências de operadores: "(), **, +, /, %, +, -"
       -Operadores de atribuição: "=, +=, -+, *=, /=, %="
       -Atividade Prática 01 - Calculadora de compra
+      -Operadores Relacionais: "a > b, b < a, a >= 10, b <= 5, 10 == "10", 10 === "10",
+       10 != "10", "
+       -Operadores Lógicos: "&&, ||, !"
